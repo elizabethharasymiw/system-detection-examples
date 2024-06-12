@@ -32,6 +32,8 @@ bool stackGrewDownTwo(int* other){
   if(!other){
     return stackGrewDownTwo(&x);
   }else{
+   printf("x1: %lld\n", (long long) other);
+   printf("x2: %lld\n", (long long) &x);
    return &x > other;
   }
 }
