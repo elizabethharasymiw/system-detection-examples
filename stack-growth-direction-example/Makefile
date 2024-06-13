@@ -5,7 +5,7 @@ run: target
 	./main
 
 nooptbuild:
-	gcc -O -o main main.c
+	gcc -O0 -o main main.c
 
 nooptrun: nooptbuild
 	./main
