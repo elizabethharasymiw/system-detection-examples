@@ -14,7 +14,7 @@ bool stackGrewDown(){
   printf("x: %p\n", &x);
   printf("y: %p\n", &y);
 
-  if (&x > &y){
+  if (&x < &y){
     return true;
   }
   return false;
@@ -36,7 +36,7 @@ bool stackGrewDownTwo(int* other){
   }else{
    printf("x1: %p\n", other);
    printf("x2: %p\n", &x);
-   return &x > other;
+   return other < &x;
   }
 }
 
