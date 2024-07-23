@@ -7,7 +7,7 @@ run: target
 optbuild:
 	g++ -std=c++20 -O3 -o main main.cpp
 
-optrun: nooptbuild
+optrun: optbuild
 	./main
 
 clean:
